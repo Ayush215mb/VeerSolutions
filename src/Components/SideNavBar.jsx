@@ -33,7 +33,7 @@ const SideNavBar = () => {
         >
           <Link
             // to="/services/React-development"
-            className="block px-4 py-2 text-white"
+            className="block px-4 py-2  hover:bg-gray-700 text-white"
           >
             Services
             <FontAwesomeIcon
@@ -67,24 +67,45 @@ const SideNavBar = () => {
               >
                 React Native
               </Link>
+              <Link
+                to="/services/Web-3"
+                className="block px-4 py-2 text-white hover:bg-gray-700"
+              >
+                Web 3
+              </Link>
+              <Link
+                to="/services/Blockchain-Development"
+                className="block px-4 py-2 text-white hover:bg-gray-700"
+              >
+                Blockchain
+              </Link>
             </div>
           )}
         </div>
 
         <Link
           to="/Portfolio"
-          className="block px-4 py-2 text-white"
+          className="block px-4 py-2  hover:bg-gray-700 text-white"
           //
         >
           Portfolio
         </Link>
-        <Link to="/blog" className="block px-4 py-2 text-white">
+        <Link
+          to="/blog"
+          className="block px-4 py-2  hover:bg-gray-700 text-white"
+        >
           blog
         </Link>
-        <Link to="/About-Us" className="block px-4 py-2 text-white">
+        <Link
+          to="/About-Us"
+          className="block px-4 py-2  hover:bg-gray-700 text-white"
+        >
           About us
         </Link>
-        <Link to="/Careers" className="block px-4 py-2 text-white">
+        <Link
+          to="/Careers"
+          className="block px-4 py-2  hover:bg-gray-700 text-white"
+        >
           careers
         </Link>
       </div>

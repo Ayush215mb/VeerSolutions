@@ -8,12 +8,6 @@ import SideNavBar from "./SideNavBar";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const [TMopen, setTMopen] = useState(false);
-
-  const toggleMenu = () => {
-    setTMopen(!TMopen);
-  };
-
   const handleMouseEnter = () => {
     setIsOpen(true);
   };
@@ -29,11 +23,7 @@ const Navbar = () => {
           to="/"
           className="flex justify-center items-center gap-3 text-lg text-white"
         >
-          <img
-            src="../../public/Images/logo.jpeg"
-            alt="Logo_img"
-            className=" max-w-12 "
-          />
+          <img src="/Images/logo.jpeg" alt="Logo_img" className=" max-w-12 " />
           <span>Veer Solutions</span>
         </Link>
       </div>
@@ -81,6 +71,18 @@ const Navbar = () => {
                     className="block px-4 py-2 text-white hover:bg-gray-700"
                   >
                     React Native
+                  </Link>
+                  <Link
+                    to="/services/Web-3"
+                    className="block px-4 py-2 text-white hover:bg-gray-700"
+                  >
+                    Web 3
+                  </Link>
+                  <Link
+                    to="/services/Blockchain-Development"
+                    className="block px-4 py-2 text-white hover:bg-gray-700"
+                  >
+                    Blockchain
                   </Link>
                 </div>
               )}

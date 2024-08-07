@@ -41,7 +41,7 @@ const CareerONE = () => {
         <h3 className="text-md md:text-3xl mt-3 mx-7 md:mt-5">
           Mail Us your resume and we will get back to you
         </h3>
-        <a href="mailto:veer.149610@gmail.com?subject=Hello there&body=I am applying for this position as a Part-time/ Full-time/ internship and I have attached my resume/portfolio  body&cc=sidharth197502@gmail.com">
+        <a href="mailto:veer.149610@gmail.com?subject=Hello there, I am {name}&body=I am applying for {*****} position as a Part-time/ Full-time/Internship and I have attached my resume/portfolio in this mail&cc=sidharth197502@gmail.com">
           <button className="md:px-8  md:py-3 px-2 py-1 leading-snug text-white transition-colors bg-blue-600 rounded-lg cursor-pointer hover:bg-blue-700 lg:block text-lg font-medium">
             SEND MAIL
           </button>

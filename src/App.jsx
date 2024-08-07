@@ -3,6 +3,8 @@ import ReactJS from "./Pages/ReactJS";
 import NextJS from "./Pages/NextJS";
 import NodeJS from "./Pages/NodeJS";
 import ReactNative from "./Pages/ReactNative";
+import Web3 from "./Pages/Web3";
+import BlockchainDevlopment from "./Pages/BlockchainDevlopment";
 import Blog from "./Pages/Blog";
 import AboutUs from "./Pages/AboutUs";
 import Careers from "./Pages/Careers";
@@ -24,6 +26,11 @@ const App = () => {
         <Route
           path="/services/React-Native-development"
           element={<ReactNative />}
+        />
+        <Route path="/services/Web-3" element={<Web3 />} />
+        <Route
+          path="/services/Blockchain-Development"
+          element={<BlockchainDevlopment />}
         />
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Blog" element={<Blog />} />

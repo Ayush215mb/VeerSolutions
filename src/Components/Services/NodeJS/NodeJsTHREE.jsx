@@ -69,7 +69,7 @@ const NodeJsTHREE = () => {
                   </span>
                 </div>
                 {expanded === index && (
-                  <div className=" p-5 md:max-w-xl  ">
+                  <div className="  px-4 py-2 max-w-xl  ">
                     <p className="text-sm md:text-lg">{project.content}</p>
                   </div>
                 )}
