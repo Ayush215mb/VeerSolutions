@@ -29,7 +29,11 @@ const Navbar = () => {
           to="/"
           className="flex justify-center items-center gap-3 text-lg text-white"
         >
-          <img src={"Images/logo.jpeg"} alt="Logo_img" className=" max-w-12 " />
+          <img
+            src="../../public/Images/logo.jpeg"
+            alt="Logo_img"
+            className=" max-w-12 "
+          />
           <span>Veer Solutions</span>
         </Link>
       </div>

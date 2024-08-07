@@ -8,7 +8,7 @@ const HeaderOne = () => {
   const AniRef = useRef();
 
   return (
-    <div className="text-white flex flex-col-reverse  items-center md:flex-row mt-5 mx-7 md:m-28 gap-6 md:gap-12  ">
+    <div className="text-white flex flex-col-reverse  items-center md:flex-row mt-5  md:m-28 gap-6 md:gap-12 mb-5  ">
       <div className="flex flex-col items-center gap-6 md:gap-10 p-6 md:p-10">
         <h1 className="sm:text-xl text-sm md:text-4xl max-w-2xl text-wrap flex justify-center items-center ">
           Build your digital solutions with expert help
@@ -32,7 +32,7 @@ const HeaderOne = () => {
         lottieRef={AniRef}
         loop={false}
         animationData={ComputerAnime}
-        className="md:max-w-xl sm:max-w-lg   max-w-40 lg:max-w-2xl"
+        className="md:max-w-xl sm:max-w-lg  max-w-60 lg:max-w-2xl"
       />
     </div>
   );

@@ -6,7 +6,7 @@ import NodeJsTHREE from "../Components/Services/NodeJS/NodeJsTHREE";
 import NodeJsFOUR from "../Components/Services/NodeJS/NodeJsFOUR";
 const NodeJS = () => {
   return (
-    <div>
+    <div className="px-5">
       <header>
         <Navbar />
       </header>

@@ -2,19 +2,19 @@ import React from "react";
 import ReactBenifitTemplate from "../React/ReactBenifitTemplate";
 const ReactNativeTWO = () => {
   return (
-    <div className="py-12 border-t m-16 md:m-28 border-gray-800 md:py-16 ">
+    <div className="py-12 border-t md:m-28 border-gray-800 md:py-16 ">
       <div className="flex flex-col items-center">
-        <div className="flex flex-col items-center md:items-center text-center justify-center gap-3 md:gap-10 md:max-w-3xl max-w-sm ">
-          <h3 className="md:text-3xl text-md text-wrap font-semibold">
+        <div className="flex flex-col items-center md:items-center text-center justify-center gap-10 md:max-w-3xl max-w-sm ">
+          <h3 className="md:text-3xl text-xl text-wrap font-semibold">
             Why Choose React Native for Your Business?
           </h3>
-          <p className="md:text-2xl text-sm font-medium text-wrap">
+          <p className="md:text-2xl text-lg font-medium text-wrap">
             As a top-tier software house in Sofia, Bulgaria, Lexis Solutions
             harnesses the dynamic capabilities of React Native to deliver robust
             mobile applications.
           </p>
         </div>
-        <div className="md:m-10 md:p-10 m-5 p-5">
+        <div className=" py-10">
           <div className="flex gap-5 flex-col md:flex-row">
             <ReactBenifitTemplate
               imgsrc="https://i.imgur.com/EVJxXwR.jpeg"

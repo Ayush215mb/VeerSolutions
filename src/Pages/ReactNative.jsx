@@ -6,13 +6,12 @@ import ReactNativeTHREE from "../Components/Services/ReactNative/ReactNativeTHRE
 import ReactNativeFOUR from "../Components/Services/ReactNative/ReactNativeFOUR";
 const ReactNative = () => {
   return (
-    <div>
+    <div className="px-5">
       <header>
         <Navbar />
       </header>
 
       <main>
-        REACT NATIVE
         <ReactNativeONE />
         <ReactNativeTWO />
         <ReactNativeTHREE />

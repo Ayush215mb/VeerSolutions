@@ -6,10 +6,10 @@ const ReactJsTWO = () => {
     <div className="py-12 border-t md:m-28 border-gray-800 md:py-16 ">
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center md:items-center text-center justify-center gap-10 md:max-w-3xl max-w-sm ">
-          <h3 className="md:text-3xl text-md text-wrap font-semibold">
+          <h3 className="md:text-3xl text-xl text-wrap font-semibold">
             Why React?
           </h3>
-          <p className="md:text-2xl text-sm font-medium text-wrap">
+          <p className="md:text-2xl text-lg font-medium text-wrap">
             React offers a number of benefits for developers and businesses
             alike.
           </p>

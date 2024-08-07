@@ -6,10 +6,10 @@ const NextJsTWO = () => {
     <div className="py-12 border-t md:m-28 border-gray-800 md:py-16 ">
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center md:items-center text-center justify-center gap-10 md:max-w-3xl max-w-sm px-3 ">
-          <h3 className="md:text-3xl text-md text-wrap font-semibold">
+          <h3 className="md:text-3xl text-xl text-wrap font-semibold">
             Why Choose Next.js for Your Business?
           </h3>
-          <p className="md:text-2xl text-sm font-medium text-wrap">
+          <p className="md:text-2xl text-lg font-medium text-wrap">
             As a prominent software agency, Lexis Solutions harnesses the
             remarkable capabilities of Next.js to deliver high-performing web
             applications.
