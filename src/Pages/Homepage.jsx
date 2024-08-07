@@ -6,7 +6,7 @@ import Navbar from "../Components/Navbar";
 
 const Homepage = () => {
   return (
-    <div className="max-w-8xl px-4 mx-auto sm:px-6 text-white">
+    <div className="max-w-8xl px-5 sm:px-6 text-white">
       <header>
         <Navbar />
       </header>

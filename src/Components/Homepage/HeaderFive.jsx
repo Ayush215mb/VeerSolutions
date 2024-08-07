@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const HeaderFive = () => {
   return (
-    <div className=" py-12 border-t mx-10 md:m-28 border-gray-800 md:py-16">
+    <div className=" py-12 border-t mx-10 md:m-28 mb-16 border-gray-800 md:py-16">
       <div className="flex flex-col justify-center lg:items-start md:items-start items-center gap-10">
         <h1 className=" lg:text-5xl md:text-3xl text-md text-wrap font-semibold">
           Partner with a bolder software agency

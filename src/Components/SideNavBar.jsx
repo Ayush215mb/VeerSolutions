@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
@@ -7,14 +6,6 @@ import Navbar from "./Navbar";
 
 const SideNavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsOpen(false);
-  };
 
   const ToggleMenu = () => {
     setIsOpen(!isOpen);

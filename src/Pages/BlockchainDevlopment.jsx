@@ -7,7 +7,7 @@ import BlockchainFOUR from "../Components/Services/Blockchain/BlockchainFOUR";
 
 const BlockchainDevlopment = () => {
   return (
-    <div>
+    <div className="px-5">
       <header>
         <Navbar />
       </header>
