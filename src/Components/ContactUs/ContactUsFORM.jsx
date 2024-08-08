@@ -2,17 +2,16 @@ import React from "react";
 
 const ContactUsFORM = () => {
   return (
-    <div className="w-full max-w-md  flex   md:max-w-3xl p-8 bg-gray-800 rounded-xl ">
+    <div className=" flex justify-center px-10 md:px-32 py-5 md:my-10 md:min-w-96 items-center  mb-10 bg-gray-800 rounded-xl ">
       <form>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 md:gap-7 md:py-5 items-center md:items-center  ">
           <div className=" gap-2 flex flex-col items-start">
-            <label className="text-md md:text-xl">
+            <label className="text-md md:text-2xl">
               Your Name
               <span className="text-red-500"> *</span>
             </label>
             <input
-              className="  text-white bg-gray-700 border-2 px-2 py-1 rounded-sm   sm:leading-6 outline-none "
-              // className=""
+              className="  text-white bg-gray-700 md:min-w-80 border-2  px-4 py-2 rounded-sm   outline-none "
               placeholder="Please Enter your name"
               required
               type="text"
@@ -20,13 +19,13 @@ const ContactUsFORM = () => {
             />
           </div>
 
-          <div className=" ">
-            <label>
-              your email
+          <div className="gap-2 flex flex-col items-start ">
+            <label className="text-md md:text-2xl">
+              Your email
               <span className="text-red-500"> *</span>
             </label>
             <input
-              className="block md:min-w-full max-w-60 py-1 md:p-2 text-white bg-gray-700 border-0 rounded-sm shadow-sm ring-1 ring-inset ring-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6 outline-none text-xs"
+              className=" text-white px-4 py-2  md:min-w-80  bg-gray-700 border-2  rounded-sm    outline-none"
               placeholder="Enter Your Email "
               required
               type="email"
@@ -34,13 +33,13 @@ const ContactUsFORM = () => {
             />
           </div>
 
-          <div className="min-w-20">
-            <label>
+          <div className="gap-2 flex flex-col items-start">
+            <label className="text-md md:text-2xl">
               You want to:
               <span className="text-red-500"> *</span>
             </label>
             <input
-              className=" block md:min-w-full max-w-32 py-1 md:p-2 md:mx-auto text-white bg-gray-700 border-0 rounded-sm shadow-sm ring-1 ring-inset ring-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6 outline-none text-xs"
+              className=" text-white px-4 py-2  md:min-w-80  bg-gray-700 border-2  rounded-sm    outline-none"
               placeholder="hire a dev team?"
               required
               type="text"
@@ -48,26 +47,26 @@ const ContactUsFORM = () => {
             />
           </div>
 
-          <div className="min-w-96">
-            <label>
+          <div className="gap-2 flex flex-col items-start">
+            <label className="text-md md:text-2xl">
               Your budget($):
               <span className="text-red-500"> *</span>
             </label>
             <input
-              className="block md:min-w-full max-w-32 py-1 md:p-2 md:mx-auto text-white bg-gray-700 border-0 rounded-sm shadow-sm ring-1 ring-inset ring-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6 outline-none text-xs"
-              placeholder="specify your budget"
+              className=" text-white px-4 py-2  md:min-w-80  bg-gray-700 border-2  rounded-sm    outline-none"
               required
+              placeholder="Enter your budeget"
               type="text"
               name="name"
             />
           </div>
 
-          <div className="min-w-96">
-            <label>
+          <div className="gap-2 flex flex-col items-start">
+            <label className="text-md md:text-2xl">
               Your breif <span className="text-red-500">*</span>
             </label>
             <textarea
-              className="block md:min-w-full max-w-32 py-1 md:p-2 md:mx-autotext-white bg-gray-700 border-0 rounded-sm shadow-sm ring-1 ring-inset ring-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6 outline-none text-xs min-h-16"
+              className=" text-white px-4 py-2 min-w-60  md:min-w-80  min-h-20 bg-gray-700 border-2 rounded-sm    outline-none"
               placeholder="Describe Your project in 1-2 sentences"
               required
               type="text"
@@ -75,7 +74,7 @@ const ContactUsFORM = () => {
             ></textarea>
           </div>
 
-          <button className="px-2 max-w-28 md:max-w- md:px-4 py-2 ml-2 mt-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block">
+          <button className="px-5 my-5 max-w-28 md:max-w- md:px-4 py-3 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block">
             submit
           </button>
         </div>

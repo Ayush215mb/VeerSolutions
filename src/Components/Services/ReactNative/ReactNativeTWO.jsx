@@ -9,7 +9,7 @@ const ReactNativeTWO = () => {
             Why Choose React Native for Your Business?
           </h3>
           <p className="md:text-2xl text-lg font-medium text-wrap">
-            As a top-tier software house in Sofia, Bulgaria, Lexis Solutions
+            As a top-tier software house in Sofia, Bulgaria, Veer Solutions
             harnesses the dynamic capabilities of React Native to deliver robust
             mobile applications.
           </p>

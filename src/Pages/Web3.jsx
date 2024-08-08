@@ -7,7 +7,7 @@ import Web3FOUR from "../Components/Services/Web3/Web3FOUR";
 
 const Web3 = () => {
   return (
-    <div>
+    <div className="px-5">
       <header>
         <Navbar />
       </header>

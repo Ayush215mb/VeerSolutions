@@ -10,7 +10,7 @@ const NextJsTWO = () => {
             Why Choose Next.js for Your Business?
           </h3>
           <p className="md:text-2xl text-lg font-medium text-wrap">
-            As a prominent software agency, Lexis Solutions harnesses the
+            As a prominent software agency, Veer Solutions harnesses the
             remarkable capabilities of Next.js to deliver high-performing web
             applications.
           </p>

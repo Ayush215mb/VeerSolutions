@@ -21,8 +21,8 @@ const NodeJsONE = () => {
         </h1>
         <p className="md:text-2xl text-md font-medium text-wrap">
           Embark on an extraordinary journey with our top-tier Node.js software
-          agency based in Sofia, Bulgaria. Our adept team at Lexis Solutions,
-          pioneers innovative solutions that elevate businesses to new heights.
+          agency based in India. Our adept team at Veer Solutions, pioneers
+          innovative solutions that elevate businesses to new heights.
         </p>
       </div>
     </div>

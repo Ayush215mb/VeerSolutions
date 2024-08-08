@@ -17,10 +17,10 @@ const ReactNativeONE = () => {
           React Native Development Services: Empowering Your Mobile Experience
         </h1>
         <p className="md:text-2xl text-md font-medium text-wrap">
-          Embark on your journey towards app excellence with Lexis Solutions,
-          the leading React Native software agency based in Sofia, Bulgaria. Our
-          expert team crafts state-of-the-art mobile solutions that amplify your
-          business reach.
+          Embark on your journey towards app excellence with Veer Solutions, the
+          leading React Native software agency based in India. Our expert team
+          crafts state-of-the-art mobile solutions that amplify your business
+          reach.
         </p>
       </div>
     </div>

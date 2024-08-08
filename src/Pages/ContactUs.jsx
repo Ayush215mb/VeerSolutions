@@ -8,7 +8,7 @@ const ContactUs = () => {
         <Navbar />
       </header>
       <main>
-        <div className="flex flex-col gap-10 md:flex-row">
+        <div className="flex flex-col gap-10 md:justify-around  md:flex-row">
           <ContactUsONE />
           <ContactUsFORM />
         </div>
