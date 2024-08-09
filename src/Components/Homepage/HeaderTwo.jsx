@@ -4,13 +4,22 @@ import AppAnime from "../../assets/AppDev.json";
 import DataAnime from "../../assets/DataSci.json";
 import { useRef } from "react";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "../../Variants";
+
 const HeaderTwo = () => {
   const WebAnimeRef = useRef();
   const AppAnimeRef = useRef();
   const DataAnimeRef = useRef();
   return (
     <div className="py-12 md:block   border-t border-gray-800 md:py-16 ">
-      <div className="flex my-2 flex-col justify-between items-center gap-9 mx-10 text-center">
+      <motion.div
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.7 }}
+        className="flex my-2 flex-col justify-between items-center gap-9 mx-10 text-center"
+      >
         <h1 className=" text-lg lg:text-4xl md:text-2xl text-wrap font-semibold   ">
           We provide full-cycle software development
         </h1>
@@ -19,9 +28,15 @@ const HeaderTwo = () => {
           We offer everything you need to make your software outshine, outlast,
           and outperform the competition.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col-reverse items-center py-5 md:mx-20 md:justify-around  md:flex-row md:mt-28 md:max-h-64 md:gap-20 md:min-h-64 ">
+      <motion.div
+        variants={fadeIn("right", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.7 }}
+        className="flex flex-col-reverse items-center py-5 md:mx-20 md:justify-around  md:flex-row md:mt-28 md:max-h-64 md:gap-20 md:min-h-64 "
+      >
         <div className="flex flex-col gap-5  justify-center items-center md:items-start ">
           <h3 className="text-lg  md:text-2xl lg:text-3xl   text-wrap font-semibold">
             Custom web solutions
@@ -39,9 +54,15 @@ const HeaderTwo = () => {
           lottieRef={WebAnimeRef}
           className="md:max-w-xs max-w-60 "
         />
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col items-center py-5 md:mx-20 md:justify-around  md:flex-row md:mt-28 md:max-h-64 md:gap-20 md:min-h-64 ">
+      <motion.div
+        variants={fadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.7 }}
+        className="flex flex-col items-center py-5 md:mx-20 md:justify-around  md:flex-row md:mt-28 md:max-h-64 md:gap-20 md:min-h-64 "
+      >
         <Lottie
           animationData={AppAnime}
           loop={false}
@@ -58,9 +79,15 @@ const HeaderTwo = () => {
             one codebase.
           </p>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col-reverse items-center py-5 md:mx-20 md:justify-around   md:flex-row md:mt-28 md:max-h-64 md:gap-20 md:min-h-64 ">
+      <motion.div
+        variants={fadeIn("right", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.7 }}
+        className="flex flex-col-reverse items-center py-5 md:mx-20 md:justify-around   md:flex-row md:mt-28 md:max-h-64 md:gap-20 md:min-h-64 "
+      >
         <div className="flex flex-col gap-5  justify-center items-center md:items-start">
           <h3 className=" text-lg  md:text-2xl lg:text-3xl   text-wrap font-semibold">
             Custom data solutions
@@ -79,7 +106,7 @@ const HeaderTwo = () => {
           lottieRef={DataAnimeRef}
           className="md:max-w-xs max-w-60"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
