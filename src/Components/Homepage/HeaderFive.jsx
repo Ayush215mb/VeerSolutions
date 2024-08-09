@@ -22,7 +22,7 @@ const HeaderFive = () => {
           We have partnered with ambitious companies and entrepreneurs.
         </p>
         <motion.button
-          variants={fadeIn("up", 0.5)}
+          variants={fadeIn("up", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}

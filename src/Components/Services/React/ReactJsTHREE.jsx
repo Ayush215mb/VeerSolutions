@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+import { motion } from "framer-motion";
+
+import { fadeIn } from "../../../Variants";
+
 const ReactJsTHREE = () => {
   const [expanded, setExpanded] = useState(null);
 
@@ -37,15 +41,27 @@ const ReactJsTHREE = () => {
   return (
     <div className="py-12 border-t  md:m-28 border-gray-800 md:py-16 ">
       <div className="flex md:gap-x-80  mb-5 items-center flex-col md:flex-row">
-        <div className="max-w-xl min-w-lg flex justify-center ">
+        <motion.div
+          variants={fadeIn("right", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="max-w-xl min-w-lg flex justify-center "
+        >
           <img
             src="https://www.lexis.solutions/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F5gydaotbo8jm%2F6leqvCo1o3iebzKZxTTivj%2F01238478d0054648bc8fcbf36fafe57c%2Fbusinessman.png%3Ffm%3Dwebp&w=384&q=75"
             alt="Thinking"
             className="min-w-20 max-w-60 md:max-w-lg "
           />
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col gap-10  md:gap-20">
+        <motion.div
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="flex flex-col gap-10  md:gap-20"
+        >
           <h2 className="text-xl md:text-4xl font-semibold mt-5">
             In what projects does React fit best?
           </h2>
@@ -71,7 +87,7 @@ const ReactJsTHREE = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
