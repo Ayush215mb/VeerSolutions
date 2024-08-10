@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import ReactJsFOUR from "../Components/Services/React/ReactJsFOUR";
 import ReactJsONE from "../Components/Services/React/ReactJsONE";
@@ -11,12 +12,15 @@ const ReactJS = () => {
         <Navbar />
       </header>
 
-      <main>
+      <main className="md:mb-36 mb-20">
         <ReactJsONE />
         <ReactJsTWO />
         <ReactJsTHREE />
         <ReactJsFOUR />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

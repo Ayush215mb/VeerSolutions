@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import PortfolioONE from "../Components/Portfolio/PortfolioONE";
 import PortfolioTWO from "../Components/Portfolio/PortfolioTWO";
@@ -7,10 +8,13 @@ const Portfolio = () => {
       <header>
         <Navbar />
       </header>
-      <main>
+      <main className="md:mb-36 mb-20">
         <PortfolioONE />
         <PortfolioTWO />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

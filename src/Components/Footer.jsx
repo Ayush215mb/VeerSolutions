@@ -1,13 +1,13 @@
 import React from "react";
 const Footer = () => {
   return (
-    <div className="md:flex md:my-10 md:mx-20 md:items-center md:justify-around">
+    <div className="md:flex md:my-10 md:mx-20 md:items-center md:justify-around ">
       <div className=" my-10 ">
         <div className="flex  items-start  gap-3 text-md ">
           <img
             src="/Images/logo.jpeg"
             alt="Logo_img"
-            className=" max-w-16 md:max-w-24 "
+            className=" max-w-16 md:max-w-16 "
           />
           {/* <p>Veer Solutions</p> */}
         </div>
@@ -30,7 +30,7 @@ const Footer = () => {
               className="max-w-8"
             />
           </a>
-          <a href=" t.me/Veer149610" target="_blank">
+          <a href="https://t.me/Veer149610" target="_blank">
             <img
               alt="telegram-icon"
               className="max-w-8"

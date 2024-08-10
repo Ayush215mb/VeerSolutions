@@ -1,5 +1,6 @@
 import AboutUsONE from "../Components/AboutUs/AboutUsONE";
 import AboutUsTWO from "../Components/AboutUs/AboutUsTWO";
+import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
 const AboutUs = () => {
@@ -8,10 +9,13 @@ const AboutUs = () => {
       <header>
         <Navbar />
       </header>
-      <main>
+      <main className="md:mb-36 mb-20">
         <AboutUsONE />
         <AboutUsTWO />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

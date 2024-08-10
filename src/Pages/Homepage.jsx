@@ -12,7 +12,7 @@ const Homepage = () => {
         <Navbar />
       </header>
 
-      <main>
+      <main className="md:mb-36 mb-20">
         <HeaderOne />
         <HeaderTwo />
         <HeaderFour />
