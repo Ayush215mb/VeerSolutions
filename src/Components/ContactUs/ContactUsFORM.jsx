@@ -1,86 +1,368 @@
-import React from "react";
+// import React, { useState } from "react";
 
-const ContactUsFORM = () => {
+// function ContactForm() {
+//   const [selectedOption, setSelectedOption] = useState(null);
+
+//   const handleOptionClick = (option) => {
+//     setSelectedOption(option);
+//   };
+
+//   const handleChange = (e) => {
+//     setFormData({
+//       ...formData,
+//       [e.target.name]: e.target.value,
+//     });
+//   };
+
+//   const [formData, setFormData] = useState({
+//     name: "",
+//     email: "",
+//     option: "",
+//     budget: "",
+//     brief: "",
+//   });
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     const { name, option, budget, brief } = formData;
+
+//     const subject = `Hello there, I am ${name}`;
+//     const body = `I am applying for ${option} with a budget of ${budget}. Here is a brief of my project: ${brief}`;
+//     const mailtoLink = `mailto:veer.149610@gmail.com?subject=${encodeURIComponent(
+//       subject
+//     )}&body=${encodeURIComponent(body)}&cc=sidharth197502@gmail.com`;
+
+//     window.location.href = mailtoLink;
+//   };
+
+//   return (
+//     <form className="max-w-md mx-auto bg-gray-800 p-5 rounded-lg text-white">
+//       <div className="mb-5">
+//         <label className="block mb-2 text-lg">Your name *</label>
+//         <input
+//           type="text"
+//           name="name"
+//           value={formData.name}
+//           onChange={handleChange}
+//           className="w-full py-2 px-4 rounded-md bg-gray-700 border-none"
+//           placeholder="Enter your name"
+//           required
+//         />
+//       </div>
+//       <div className="mb-5">
+//         <label className="block mb-2 text-lg">Your email *</label>
+//         <input
+//           type="email"
+//           name="email"
+//           value={formData.email}
+//           className="w-full py-2 px-4 rounded-md bg-gray-700 border-none"
+//           placeholder="Enter your email"
+//           required
+//         />
+//       </div>
+//       <div className="mb-5">
+//         <label className="block mb-2 text-lg">You want to: *</label>
+//         <div className="flex gap-2 ">
+//           <button
+//             type="button"
+//             className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+//               selectedOption === "build a product"
+//                 ? "border-cyan-500 bg-gray-700"
+//                 : "border-gray-700"
+//             }`}
+//             onClick={() => handleOptionClick("build a product")}
+//           >
+//             build a product
+//           </button>
+//           <button
+//             type="button"
+//             className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+//               selectedOption === "hire a dev team"
+//                 ? "border-cyan-500 bg-gray-700"
+//                 : "border-gray-700"
+//             }`}
+//             onClick={() => handleOptionClick("hire a dev team")}
+//           >
+//             hire a dev team
+//           </button>
+//           <button
+//             type="button"
+//             className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+//               selectedOption === "other"
+//                 ? "border-cyan-500 bg-gray-700"
+//                 : "border-gray-700"
+//             }`}
+//             onClick={() => handleOptionClick("other")}
+//           >
+//             other
+//           </button>
+//         </div>
+//       </div>
+
+//       <div className="mb-5">
+//         <label className="block mb-2 text-lg">Your budget ($): *</label>
+//         <div className="flex gap-2">
+//           <button
+//             type="button"
+//             className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+//               selectedOption === "XS"
+//                 ? "border-cyan-500 bg-gray-700"
+//                 : "border-gray-700"
+//             }`}
+//             onClick={() => handleOptionClick("XS")}
+//           >
+//             XS
+//             <br />
+//             <small>&lt; 10K</small>
+//           </button>
+//           <button
+//             type="button"
+//             className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+//               selectedOption === "S"
+//                 ? "border-cyan-500 bg-gray-700"
+//                 : "border-gray-700"
+//             }`}
+//             onClick={() => handleOptionClick("S")}
+//           >
+//             S<br />
+//             <small>10K - 25K</small>
+//           </button>
+//           <button
+//             type="button"
+//             className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+//               selectedOption === "M"
+//                 ? "border-cyan-500 bg-gray-700"
+//                 : "border-gray-700"
+//             }`}
+//             onClick={() => handleOptionClick("M")}
+//           >
+//             M<br />
+//             <small>25K - 50K</small>
+//           </button>
+//           <button
+//             type="button"
+//             className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+//               selectedOption === "L"
+//                 ? "border-cyan-500 bg-gray-700"
+//                 : "border-gray-700"
+//             }`}
+//             onClick={() => handleOptionClick("L")}
+//           >
+//             L<br />
+//             <small>50K+</small>
+//           </button>
+//         </div>
+//       </div>
+
+//       <div className="mb-5">
+//         <label htmlFor="brief" className="block mb-2 text-lg">
+//           Your brief: *
+//         </label>
+//         <textarea
+//           id="brief"
+//           className="w-full py-2 px-4 min-h-20 rounded-md bg-gray-700 border-none"
+//           placeholder="Describe your project in 1-2 sentences"
+//         ></textarea>
+//       </div>
+
+//       <button
+//         type="submit"
+//         className="w-full py-2 px-4 bg-cyan-500 rounded-md hover:bg-cyan-600"
+//       >
+//         Submit
+//       </button>
+//     </form>
+//   );
+// }
+
+// export default ContactForm;
+
+import React, { useState } from "react";
+
+function ContactForm() {
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    option: "",
+    budget: "",
+    brief: "",
+  });
+
+  const handleOptionClick = (option, field) => {
+    setFormData({
+      ...formData,
+      [field]: option,
+    });
+    setSelectedOption(option);
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { name, option, budget, brief } = formData;
+
+    const subject = `Hello there, I am ${name}`;
+    const body = `I am applying for ${option} with a budget of ${budget}. Here is a brief of my project: ${brief}`;
+    const mailtoLink = `mailto:sidharth197502@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}&cc=ayush215mb@gmail.com`;
+
+    window.location.href = mailtoLink;
+  };
+
   return (
-    <div className=" flex justify-center px-10 md:px-32 py-5 md:my-10 md:min-w-96 items-center  mb-10 bg-gray-800 rounded-xl ">
-      <form>
-        <div className="flex flex-col gap-3 md:gap-7 md:py-5 items-center md:items-center  ">
-          <div className=" gap-2 flex flex-col items-start">
-            <label className="text-md md:text-2xl">
-              Your Name
-              <span className="text-red-500"> *</span>
-            </label>
-            <input
-              className="  text-white bg-gray-700 md:min-w-80 border-2  px-4 py-2 rounded-sm   outline-none "
-              placeholder="Please Enter your name"
-              required
-              type="text"
-              name="name"
-            />
-          </div>
-
-          <div className="gap-2 flex flex-col items-start ">
-            <label className="text-md md:text-2xl">
-              Your email
-              <span className="text-red-500"> *</span>
-            </label>
-            <input
-              className=" text-white px-4 py-2  md:min-w-80  bg-gray-700 border-2  rounded-sm    outline-none"
-              placeholder="Enter Your Email "
-              required
-              type="email"
-              name="email"
-            />
-          </div>
-
-          <div className="gap-2 flex flex-col items-start">
-            <label className="text-md md:text-2xl">
-              You want to:
-              <span className="text-red-500"> *</span>
-            </label>
-            <input
-              className=" text-white px-4 py-2  md:min-w-80  bg-gray-700 border-2  rounded-sm    outline-none"
-              placeholder="hire a dev team?"
-              required
-              type="text"
-              name="intention"
-            />
-          </div>
-
-          <div className="gap-2 flex flex-col items-start">
-            <label className="text-md md:text-2xl">
-              Your budget($):
-              <span className="text-red-500"> *</span>
-            </label>
-            <input
-              className=" text-white px-4 py-2  md:min-w-80  bg-gray-700 border-2  rounded-sm    outline-none"
-              required
-              placeholder="Enter your budeget"
-              type="text"
-              name="name"
-            />
-          </div>
-
-          <div className="gap-2 flex flex-col items-start">
-            <label className="text-md md:text-2xl">
-              Your breif <span className="text-red-500">*</span>
-            </label>
-            <textarea
-              className=" text-white px-4 py-2 min-w-60  md:min-w-80  min-h-20 bg-gray-700 border-2 rounded-sm    outline-none"
-              placeholder="Describe Your project in 1-2 sentences"
-              required
-              type="text"
-              name="name"
-            ></textarea>
-          </div>
-
-          <button className="px-5 my-5 max-w-28 md:max-w- md:px-4 py-3 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block">
-            submit
+    <form
+      className="max-w-md mx-auto bg-gray-800 p-5 rounded-lg text-white"
+      onSubmit={handleSubmit}
+    >
+      <div className="mb-5">
+        <label className="block mb-2 text-lg">Your name *</label>
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          className="w-full py-2 px-4 rounded-md bg-gray-700 border-none"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div className="mb-5">
+        <label className="block mb-2 text-lg">Your email *</label>
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          className="w-full py-2 px-4 rounded-md bg-gray-700 border-none"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div className="mb-5">
+        <label className="block mb-2 text-lg">You want to: *</label>
+        <div className="flex gap-2 ">
+          <button
+            type="button"
+            className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+              formData.option === "build a product"
+                ? "border-cyan-500 bg-gray-700"
+                : "border-gray-700"
+            }`}
+            onClick={() => handleOptionClick("build a product", "option")}
+          >
+            build a product
+          </button>
+          <button
+            type="button"
+            className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+              formData.option === "hire a dev team"
+                ? "border-cyan-500 bg-gray-700"
+                : "border-gray-700"
+            }`}
+            onClick={() => handleOptionClick("hire a dev team", "option")}
+          >
+            hire a dev team
+          </button>
+          <button
+            type="button"
+            className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+              formData.option === "other"
+                ? "border-cyan-500 bg-gray-700"
+                : "border-gray-700"
+            }`}
+            onClick={() => handleOptionClick("other", "option")}
+          >
+            other
           </button>
         </div>
-      </form>
-    </div>
-  );
-};
+      </div>
 
-export default ContactUsFORM;
+      <div className="mb-5">
+        <label className="block mb-2 text-lg">Your budget ($): *</label>
+        <div className="flex gap-2">
+          <button
+            type="button"
+            className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+              formData.budget === "XS"
+                ? "border-cyan-500 bg-gray-700"
+                : "border-gray-700"
+            }`}
+            onClick={() => handleOptionClick("XS", "budget")}
+          >
+            XS
+            <br />
+            <small>&lt; 10K</small>
+          </button>
+          <button
+            type="button"
+            className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+              formData.budget === "S"
+                ? "border-cyan-500 bg-gray-700"
+                : "border-gray-700"
+            }`}
+            onClick={() => handleOptionClick("S", "budget")}
+          >
+            S<br />
+            <small>10K - 25K</small>
+          </button>
+          <button
+            type="button"
+            className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+              formData.budget === "M"
+                ? "border-cyan-500 bg-gray-700"
+                : "border-gray-700"
+            }`}
+            onClick={() => handleOptionClick("M", "budget")}
+          >
+            M<br />
+            <small>25K - 50K</small>
+          </button>
+          <button
+            type="button"
+            className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
+              formData.budget === "L"
+                ? "border-cyan-500 bg-gray-700"
+                : "border-gray-700"
+            }`}
+            onClick={() => handleOptionClick("L", "budget")}
+          >
+            L<br />
+            <small>50K+</small>
+          </button>
+        </div>
+      </div>
+
+      <div className="mb-5">
+        <label htmlFor="brief" className="block mb-2 text-lg">
+          Your brief: *
+        </label>
+        <textarea
+          id="brief"
+          name="brief"
+          value={formData.brief}
+          onChange={handleChange}
+          className="w-full py-2 px-4 min-h-20 rounded-md bg-gray-700 border-none"
+          placeholder="Describe your project in 1-2 sentences"
+          required
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        className="w-full py-2 px-4 bg-cyan-500 rounded-md hover:bg-cyan-600"
+      >
+        Submit
+      </button>
+    </form>
+  );
+}
+
+export default ContactForm;
