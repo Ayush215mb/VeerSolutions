@@ -30,8 +30,8 @@ function ContactForm() {
     const { name, option, budget, brief } = formData;
 
     const subject = `Hello there, I am ${name}`;
-    const body = `I am applying for ${option} with a budget of ${budget}.
-      Here is a brief of my project: ${brief}`;
+    const body = `I am applying for ${option} with a budget of $${budget}.
+    Here is a brief of my project: ${brief}`;
     const mailtoLink = `mailto:veer.149610@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}&cc=ayush215mb@gmail.com`;

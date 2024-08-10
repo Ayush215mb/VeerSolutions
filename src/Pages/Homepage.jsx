@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import HeaderFive from "../Components/Homepage/HeaderFive";
 import HeaderFour from "../Components/Homepage/HeaderFour";
 import HeaderOne from "../Components/Homepage/HeaderOne";
@@ -17,6 +18,9 @@ const Homepage = () => {
         <HeaderFour />
         <HeaderFive />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
