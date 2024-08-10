@@ -21,15 +21,9 @@ const HeaderFive = () => {
           <br></br>
           We have partnered with ambitious companies and entrepreneurs.
         </p>
-        <motion.button
-          variants={fadeIn("up", 0.4)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
-          className=" md:px-8  md:py-3 px-4 py-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block text-lg font-medium"
-        >
+        <button className=" md:px-8  md:py-3 px-4 py-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block text-lg font-medium">
           <Link to="/Contact-Us">Let's talk</Link>
-        </motion.button>
+        </button>
       </motion.div>
     </div>
   );

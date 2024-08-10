@@ -12,7 +12,7 @@ const HeaderOne = () => {
 
   return (
     <motion.div
-      variants={fadeIn("up", 0.2)}
+      variants={fadeIn("up", 0.1)}
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true, amount: 0.7 }}
