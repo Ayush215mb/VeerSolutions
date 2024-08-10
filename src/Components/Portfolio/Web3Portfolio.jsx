@@ -1,5 +1,6 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../../Variants";
 const Web3Portfolio = () => {
   return (
     <div className="md:mx-16">
@@ -10,7 +11,12 @@ const Web3Portfolio = () => {
           className="max-w-60 mt-5 md:max-w-lg  md:mb-10 md:mt-16 md:min-w-96 "
         />
         <div>
-          <div>
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
             <h1 className="text-xl font-bold text-center mb-5 md:mb-10 md:text-5xl mt-10">
               Cryptolegions
             </h1>
@@ -30,12 +36,18 @@ const Web3Portfolio = () => {
                 <li>SEO</li>
               </ul>
             </div>
-          </div>
-          <div className="flex justify-center">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="flex justify-center"
+          >
             <button className=" md:px-8 my-5  md:py-3 px-4 py-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block text-lg font-medium">
               check Out
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="flex  flex-col md:flex-row md:gap-40  items-center my-5 ">
@@ -45,7 +57,12 @@ const Web3Portfolio = () => {
           className="max-w-60 mt-5 md:max-w-lg  md:min-w-96 md:mb-10 md:mt-16 "
         />
         <div>
-          <div>
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
             <h1 className="text-xl font-bold text-center mb-5 md:mb-10 md:text-5xl mt-10">
               Mirage
             </h1>
@@ -66,12 +83,18 @@ const Web3Portfolio = () => {
                 <li>Rust</li>
               </ul>
             </div>
-          </div>
-          <div className="flex justify-center">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="flex justify-center"
+          >
             <button className=" md:px-8 my-5  md:py-3 px-4 py-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block text-lg font-medium">
               check Out
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

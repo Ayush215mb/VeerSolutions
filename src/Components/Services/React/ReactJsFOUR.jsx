@@ -11,7 +11,7 @@ const ReactJsFOUR = () => {
   return (
     <div className="py-12 border-t  md:m-28  border-gray-800 md:py-16">
       <motion.div
-        variants={fadeIn("up", 0.5)}
+        variants={fadeIn("up", 0.3)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.7 }}
@@ -43,7 +43,7 @@ const ReactJsFOUR = () => {
             we are the ideal partner to bring your React.js ideas to life.
           </p>
           <motion.div
-            variants={fadeIn("up", 0.6)}
+            variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}

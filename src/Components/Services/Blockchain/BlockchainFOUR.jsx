@@ -3,11 +3,20 @@ import { useRef } from "react";
 import QuestionAnime from "../../../assets/Question.json";
 import { Link } from "react-router-dom";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../Variants";
+
 const BlockchainFOUR = () => {
   const QuestionAnimeRef = useRef();
   return (
     <div className="py-12 border-t  md:m-28  border-gray-800 md:py-16">
-      <div className="flex flex-col md:flex-row items-center md:gap-16">
+      <motion.div
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.7 }}
+        className="flex flex-col md:flex-row items-center md:gap-16"
+      >
         <Lottie
           animationData={QuestionAnime}
           loop={false}
@@ -33,13 +42,19 @@ const BlockchainFOUR = () => {
             and commitment to delivering on time and within budget, we are the
             ideal partner to bring your Blockchain ideas to life.
           </p>
-          <div className="min-w-40 flex items-center">
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="min-w-40 flex items-center"
+          >
             <button className=" px-3 py-2 md:px-4 md:py-2 mt-10 max-w-40    leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block">
               <Link to="/contact-Us">Get in touch</Link>
             </button>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

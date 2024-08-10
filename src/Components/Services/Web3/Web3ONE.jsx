@@ -1,5 +1,6 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../Variants";
 const Web3ONE = () => {
   return (
     <div className="flex  flex-col gap-10 md:gap-16  mt-10 md:mt-20  items-center justify-center">
@@ -8,8 +9,14 @@ const Web3ONE = () => {
         alt="Web3_img"
         className="md:max-w-lg max-w-60"
       />
-      <div className="flex flex-col gap-10 items-center md:max-w-3xl  max-w-sm py-5 mb-10  px-3">
-        <h1 className="md:text-4xl text-xl font-extrabold text-wrap">
+      <motion.div
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.7 }}
+        className="flex flex-col gap-10 items-center md:max-w-3xl  max-w-sm py-5 mb-10  px-3"
+      >
+        <h1 className="md:text-4xl text-xl text-center font-extrabold text-wrap">
           Web3 Development Services: Pioneering the Future of the Decentralized
           Web
         </h1>
@@ -19,7 +26,7 @@ const Web3ONE = () => {
           user-centric, and trustless solutions crafted by our seasoned Web3
           professionals.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

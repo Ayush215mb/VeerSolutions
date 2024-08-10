@@ -3,6 +3,9 @@ import Web2Portfolio from "./Web2Portfolio";
 import Web3Portfolio from "./Web3Portfolio";
 import BlockchainPortfolio from "./BlockchainPortfolio";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "../../Variants";
+
 const PortfolioTWO = () => {
   const [activeComponent, setActiveComponent] = useState("");
 
@@ -20,7 +23,11 @@ const PortfolioTWO = () => {
   };
   return (
     <div className="my-10 lg:mx-16 flex flex-col lg:gap-20 items-center justify-center ">
-      <div
+      <motion.div
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.7 }}
         className="flex border-2   bg-gray-700 max-w-full  lg:max-w-3xl 
         lg:min-w-96 "
       >
@@ -48,7 +55,7 @@ const PortfolioTWO = () => {
             Blockchain
           </button>
         </div>
-      </div>
+      </motion.div>
       <div>{renderComponent()}</div>
     </div>
   );

@@ -49,7 +49,7 @@ const NextJsFOUR = () => {
           </p>
 
           <motion.div
-            variants={fadeIn("up", 0.4)}
+            variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}

@@ -1,8 +1,15 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../Variants";
 const BlockchainONE = () => {
   return (
-    <div className="flex  flex-col gap-10 md:gap-16  mt-10 md:mt-20  items-center justify-center">
+    <motion.div
+      variants={fadeIn("up", 0.3)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: true, amount: 0.7 }}
+      className="flex  flex-col gap-10 md:gap-16  mt-10 md:mt-20  items-center justify-center"
+    >
       <img
         src="/Images/Blockchain.jpg"
         alt="blockchain_img"
@@ -20,7 +27,7 @@ const BlockchainONE = () => {
           blockchain professionals.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -5,6 +5,9 @@ import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import SideNavBar from "./SideNavBar";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "../Variants";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,14 +26,34 @@ const Navbar = () => {
           to="/"
           className="flex justify-center items-center gap-3 text-lg text-white"
         >
-          <img src="/Images/logo.jpeg" alt="Logo_img" className=" max-w-12 " />
-          <span>Veer Solutions</span>
+          <motion.img
+            variants={fadeIn("right", 0.05)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            src="/Images/logo.jpeg"
+            alt="Logo_img"
+            className=" max-w-12 "
+          />
+          <motion.span
+            variants={fadeIn("right", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
+            Veer Solutions
+          </motion.span>
         </Link>
       </div>
 
       <div className="flex gap-2 ">
         <ul className=" flex-wrap hidden  md:flex  justify-end items-center text-lg cursor-pointer  ">
-          <li>
+          <motion.li
+            variants={fadeIn("right", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
             <div
               className="relative  inline-block"
               onMouseEnter={handleMouseEnter}
@@ -87,43 +110,69 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
             <Link
               className="flex items-center px-4 py-2  text-gray-300 transition duration-150 ease-in-out rounded hover:bg-opacity-50 hover:bg-gray-700 hover:text-gray-200"
               to="/Portfolio"
             >
               Portfolio
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
             <Link
               className="flex items-center px-4 py-2  text-gray-300 transition duration-150 ease-in-out rounded hover:bg-opacity-50 hover:bg-gray-700 hover:text-gray-200"
               to="/Blog"
             >
               Blog
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
             <Link
               className="flex items-center px-4 py-2  text-gray-300 transition duration-150 ease-in-out rounded hover:bg-opacity-50 hover:bg-gray-700 hover:text-gray-200"
               to="/About-Us"
             >
               About us
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            variants={fadeIn("right", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
             <Link
               className="flex items-center px-4 py-2  text-gray-300 transition duration-150 ease-in-out rounded hover:bg-opacity-50 hover:bg-gray-700 hover:text-gray-200"
               to="/Careers"
             >
               Careers
             </Link>
-          </li>
+          </motion.li>
         </ul>
-        <button className="hidden px-4 py-2 ml-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block">
+        <motion.button
+          variants={fadeIn("right", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="hidden px-4 py-2 ml-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block"
+        >
           <Link to="/Contact-Us"> Let's talk</Link>
-        </button>
+        </motion.button>
         <div className="font-3xl grid md:hidden">
           <button className="text-gray-400 hover:text-white focus:outline-none">
             <Link to="/SideNavbar">

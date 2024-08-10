@@ -1,5 +1,6 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../../Variants";
 const Web2Portfolio = () => {
   return (
     <div className="md:mx-16">
@@ -11,7 +12,12 @@ const Web2Portfolio = () => {
         />
 
         <div>
-          <div className=" ">
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
             <h1 className="text-xl font-bold text-center mb-5 md:text-5xl mt-10">
               WinIt
             </h1>
@@ -28,12 +34,18 @@ const Web2Portfolio = () => {
               the challenging aspect of working on a project on Personalized
               Home Health Tests and Professional Coaching for Optimal Health.
             </p>
-          </div>
-          <div className=" flex justify-center">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className=" flex justify-center"
+          >
             <button className=" md:px-8 my-5  md:py-3 px-4 py-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block text-lg font-medium">
               check Out
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="flex border-t border-slate-800  flex-col md:flex-row md:gap-40  items-center my-5 ">
@@ -43,7 +55,13 @@ const Web2Portfolio = () => {
           className="max-w-60 mt-5 md:max-w-lg  md:mb-10 md:mt-16 "
         />
         <div>
-          <div className="">
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className=""
+          >
             <h1 className="text-xl font-bold text-center mb-5 md:text-5xl mt-10">
               Pebble
             </h1>
@@ -62,12 +80,18 @@ const Web2Portfolio = () => {
               but we worked on the backend logic to have an efficient financial
               system built on top of the Blockchain.
             </p>
-          </div>
-          <div className="flex justify-center">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+            className="flex justify-center"
+          >
             <button className=" md:px-8 my-5  md:py-3 px-4 py-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block text-lg font-medium">
               check Out
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

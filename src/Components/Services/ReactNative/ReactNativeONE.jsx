@@ -1,10 +1,19 @@
 import Lottie from "lottie-react";
 import { useRef } from "react";
 import ReactJSAnime from "../../../assets/ReactJS.json";
+
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../Variants";
 const ReactNativeONE = () => {
   const ReactJSAnimeRef = useRef();
   return (
-    <div className="flex  flex-col  items-center justify-center">
+    <motion.div
+      variants={fadeIn("up", 0.3)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: true, amount: 0.7 }}
+      className="flex  flex-col  items-center justify-center"
+    >
       <Lottie
         animationData={ReactJSAnime}
         loop={false}
@@ -23,7 +32,7 @@ const ReactNativeONE = () => {
           reach.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
