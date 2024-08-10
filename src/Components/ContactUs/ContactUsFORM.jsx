@@ -114,7 +114,7 @@ function ContactForm() {
             <button
               type="button"
               className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
-                formData.budget === "XS"
+                formData.budget === "10k"
                   ? "border-cyan-500 bg-gray-700"
                   : "border-gray-700"
               }`}
@@ -127,7 +127,7 @@ function ContactForm() {
             <button
               type="button"
               className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
-                formData.budget === "S"
+                formData.budget === "10k - 25k"
                   ? "border-cyan-500 bg-gray-700"
                   : "border-gray-700"
               }`}
@@ -139,7 +139,7 @@ function ContactForm() {
             <button
               type="button"
               className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
-                formData.budget === "M"
+                formData.budget === "25k - 50k"
                   ? "border-cyan-500 bg-gray-700"
                   : "border-gray-700"
               }`}
@@ -151,7 +151,7 @@ function ContactForm() {
             <button
               type="button"
               className={`flex-1 py-2 px-4 rounded-md border-2 transition ${
-                formData.budget === "L"
+                formData.budget === "50k+"
                   ? "border-cyan-500 bg-gray-700"
                   : "border-gray-700"
               }`}
