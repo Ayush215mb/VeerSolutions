@@ -1,8 +1,15 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../../Variants";
 const ContactUsONE = () => {
   return (
-    <div className="flex flex-col my-5 md:my-10 lg:ml-20  text-center md:text-start md:p-5 gap-5">
+    <motion.div
+      variants={fadeIn("up", 0.3)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: true, amount: 0.7 }}
+      className="flex flex-col my-5 md:my-10 lg:ml-20  text-center md:text-start md:p-5 gap-5"
+    >
       <h1 className="md:text-4xl md:font-bold font-semibold text-xl">
         Let’s talk about your project
       </h1>
@@ -17,7 +24,7 @@ const ContactUsONE = () => {
         <p> 🤙 We schedule a discovery call</p>
         <p> 📃 You get a bussiness proposal</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

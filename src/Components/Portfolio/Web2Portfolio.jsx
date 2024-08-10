@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../Variants";
+import { CiShare1 } from "react-icons/ci";
 const Web2Portfolio = () => {
   return (
     <div className="md:mx-16">
@@ -42,9 +43,13 @@ const Web2Portfolio = () => {
             viewport={{ once: true, amount: 0.7 }}
             className=" flex justify-center"
           >
-            <button className=" md:px-8 my-5  md:py-3 px-4 py-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block text-lg font-medium">
-              check Out
-            </button>
+            <a href="https://winitclinic.com/ " target="_blank">
+              <button className=" md:px-8 my-5  md:py-3 px-4 py-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block text-lg font-medium">
+                <div className="flex gap-2 font-semibold items-center">
+                  check Out <CiShare1 className="font-black text-xl " />
+                </div>
+              </button>
+            </a>
           </motion.div>
         </div>
       </div>
@@ -88,9 +93,13 @@ const Web2Portfolio = () => {
             viewport={{ once: true, amount: 0.7 }}
             className="flex justify-center"
           >
-            <button className=" md:px-8 my-5  md:py-3 px-4 py-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block text-lg font-medium">
-              check Out
-            </button>
+            <a href="  https://www.pebble.us/" target="_blank">
+              <button className=" md:px-8 my-5  md:py-3 px-4 py-2 leading-snug text-white transition-colors bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700 lg:block text-lg font-medium">
+                <div className="flex gap-2 font-semibold items-center">
+                  check Out <CiShare1 className="font-black text-xl " />
+                </div>
+              </button>
+            </a>
           </motion.div>
         </div>
       </div>

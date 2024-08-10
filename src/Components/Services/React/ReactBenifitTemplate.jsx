@@ -1,4 +1,5 @@
 import React from "react";
+import { IoIosSpeedometer } from "react-icons/io";
 
 const ReactBenifitTemplate = ({ imgsrc, heading, text }) => {
   return (
