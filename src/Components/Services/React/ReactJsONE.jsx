@@ -28,8 +28,8 @@ const ReactJsONE = () => {
         </h1>
         <p className="md:text-2xl text-md font-medium text-wrap">
           Unleash your business potential with the premier React development
-          agency in India. Discover unrivaled digital transformation with
-          cutting-edge solutions driven by our experts.
+          agency. Discover unrivaled digital transformation with cutting-edge
+          solutions driven by our experts.
         </p>
       </motion.div>
     </motion.div>

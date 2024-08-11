@@ -1,6 +1,4 @@
 import React from "react";
-import { IoIosSpeedometer } from "react-icons/io";
-import { AiFillFund } from "react-icons/ai";
 
 const ReactBenifitTemplate = ({
   imgsrc,
