@@ -12,8 +12,8 @@ const Footer = () => {
           {/* <p>Veer Solutions</p> */}
         </div>
         <p className="max-w-full mt-5 text-sm md:text-xl md:max-w-md">
-          Veer Solutions is an award wining Indian software agency on a mission
-          to turn innovative ideas into groundbreaking digital products.
+          Veer Solutions is an Indian software agency on a mission to turn
+          innovative ideas into groundbreaking digital products.
         </p>
       </div>
 

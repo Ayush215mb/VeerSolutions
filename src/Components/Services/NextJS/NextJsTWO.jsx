@@ -3,6 +3,12 @@ import ReactBenifitTemplate from "../React/ReactBenifitTemplate";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../Variants";
+import { HiMiniBeaker } from "react-icons/hi2";
+import { IoIosSpeedometer } from "react-icons/io";
+import { BsRocketTakeoffFill } from "react-icons/bs";
+import { MdElectricBolt } from "react-icons/md";
+import { FaUsers } from "react-icons/fa";
+import { PiHandCoinsBold } from "react-icons/pi";
 
 const NextJsTWO = () => {
   return (
@@ -33,7 +39,7 @@ const NextJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={HiMiniBeaker}
                 heading="SEO Optimization"
                 text="Next.js is built with SEO-friendly features, increasing your website's visibility and driving more organic traffic."
               />
@@ -46,7 +52,7 @@ const NextJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={IoIosSpeedometer}
                 heading="Server-Side Rendering"
                 text="Next.js allows for server-side rendering, improving your application's performance and user experience."
               />
@@ -59,7 +65,7 @@ const NextJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={BsRocketTakeoffFill}
                 heading="Scalability"
                 text="With Next.js, your web application can easily handle growing user demand, adapting to your business's expansion and your users' changing needs."
               />
@@ -73,7 +79,7 @@ const NextJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={MdElectricBolt}
                 heading="Faster Load Times"
                 text="Thanks to automatic code splitting, Next.js optimizes the load time of your web pages, leading to a better user experience."
               />
@@ -86,7 +92,7 @@ const NextJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={FaUsers}
                 heading="Community and Ecosystem"
                 text="Next.js has a lively community and a comprehensive ecosystem of libraries and tools, ensuring ongoing support and innovation."
               />
@@ -99,7 +105,7 @@ const NextJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={PiHandCoinsBold}
                 heading="Hybrid Rendering"
                 text="Next.js offers the flexibility of both server-side rendering and static site generation, allowing you to choose the best approach based on your needs for each individual page."
               />

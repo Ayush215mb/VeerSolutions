@@ -2,6 +2,10 @@ import React from "react";
 import ReactBenifitTemplate from "../React/ReactBenifitTemplate";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../Variants";
+import { PiCubeTransparentDuotone } from "react-icons/pi";
+import { TbSocial } from "react-icons/tb";
+import { GoPasskeyFill, GoSortDesc } from "react-icons/go";
+import { FaFileContract, FaUserLock } from "react-icons/fa";
 
 const Web3TWO = () => {
   return (
@@ -31,7 +35,7 @@ const Web3TWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={PiCubeTransparentDuotone}
                 heading="Transparency"
                 text=" Ensures all transactions and changes are recorded on public ledgers, increasing trust and accountability through verifiable actions."
               />
@@ -44,7 +48,7 @@ const Web3TWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={TbSocial}
                 heading="Interoperability"
                 text="Facilitates seamless interaction between different decentralized applications (dApps) and platforms, enabling a more integrated and cohesive ecosystem."
               />
@@ -57,7 +61,7 @@ const Web3TWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={GoSortDesc}
                 heading="Decentralization"
                 text=" Eliminates central points of control by distributing data and services across a network, enhancing security and reducing dependency on single entities."
               />
@@ -71,7 +75,7 @@ const Web3TWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={GoPasskeyFill}
                 heading="User Ownership"
                 text="Empowers users with control over their data and digital assets, reducing privacy concerns and enhancing individual autonomy."
               />
@@ -84,7 +88,7 @@ const Web3TWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={FaUserLock}
                 heading="Censorship Resistance"
                 text="Protects against censorship by distributing content and services across a decentralized network, ensuring uninterrupted access."
               />
@@ -97,7 +101,7 @@ const Web3TWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={FaFileContract}
                 heading="Smart Contracts"
                 text="Automates agreements and processes through code, reducing the need for intermediaries and ensuring reliable, tamper-proof execution."
               />

@@ -2,7 +2,13 @@ import React from "react";
 import ReactBenifitTemplate from "./ReactBenifitTemplate";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../Variants";
+import { IoIosSpeedometer } from "react-icons/io";
+import { AiFillFund } from "react-icons/ai";
+import { BsRocketTakeoffFill } from "react-icons/bs";
 
+import { FaUsers } from "react-icons/fa6";
+import { PiHandCoinsBold } from "react-icons/pi";
+import { MdElectricBolt } from "react-icons/md";
 const ReactJsTWO = () => {
   return (
     <div className="py-12 border-t md:m-28 border-gray-800 md:py-16 ">
@@ -31,9 +37,11 @@ const ReactJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
                 heading="Rapid development"
-                text="React's modular design allows for easy integration with other technologies, making it the perfect choice for complex software applications."
+                text="React's modular design allows for easy 
+                integration with other technologies, making it
+                 the perfect choice for complex software applications."
+                icon={IoIosSpeedometer}
               />
             </motion.div>
 
@@ -44,7 +52,7 @@ const ReactJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={AiFillFund}
                 heading="Scalable & Efficient"
                 text="React provides a scalable foundation that adapts to your growing business needs, delivering unparalleled performance at every level."
               />
@@ -57,7 +65,7 @@ const ReactJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={BsRocketTakeoffFill}
                 heading="Good for complex projects"
                 text="We love helping our clients skyrocket their ideas. Our partnerships range all the way from established brands, to innovative startups and funded ventures."
               />
@@ -71,7 +79,7 @@ const ReactJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={FaUsers}
                 heading="Enhanced User Experience"
                 text="React uses a virtual DOM to ensure smooth and speedy rendering. This leads to improved user experience as the applications load faster and run seamlessly, even in high-data requirements scenarios"
               />
@@ -83,7 +91,7 @@ const ReactJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={PiHandCoinsBold}
                 heading="Cost-Effective Solution"
                 text="React's reusable component structure not only speeds up the development process but also reduces the overall cost. This makes it a cost-effective choice for businesses looking to get high-quality web applications in a short time frame."
               />
@@ -95,7 +103,7 @@ const ReactJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={MdElectricBolt}
                 heading="Rich ecosystem and active community support"
                 text="Benefit from the robust global React community that constantly enriches the platform with new advancements and thorough documentation."
               />

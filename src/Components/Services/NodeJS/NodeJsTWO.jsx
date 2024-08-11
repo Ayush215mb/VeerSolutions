@@ -3,6 +3,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../Variants";
 import ReactBenifitTemplate from "../React/ReactBenifitTemplate";
+import { IoIosSpeedometer } from "react-icons/io";
+import { HiMiniBeaker } from "react-icons/hi2";
+import { PiHandCoinsBold } from "react-icons/pi";
+import { TbSocial } from "react-icons/tb";
+import { MdElectricBolt } from "react-icons/md";
+import { BsRocketTakeoffFill } from "react-icons/bs";
 const NodeJsTWO = () => {
   return (
     <div className="py-12 border-t md:m-28 border-gray-800 md:py-16 ">
@@ -31,7 +37,7 @@ const NodeJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={IoIosSpeedometer}
                 heading="Unleash speed and scalability"
                 text="Harness the full potential of Node.js to build lightning-fast, scalable web applications that can handle a massive number of concurrent connections and data-intensive tasks."
               />
@@ -44,7 +50,7 @@ const NodeJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={HiMiniBeaker}
                 heading="Real-time interactivity"
                 text="With Node.js, create real-time features like chat applications, collaboration tools, and live data streaming that keep your users engaged and enhance user experience."
               />
@@ -57,7 +63,7 @@ const NodeJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={PiHandCoinsBold}
                 heading="Efficiency and productivity"
                 text="Benefit from Node.js's non-blocking, event-driven architecture, which allows for efficient handling of requests and boosts developer productivity by facilitating code reusability."
               />
@@ -71,7 +77,7 @@ const NodeJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={TbSocial}
                 heading="Cross-platform compatibility"
                 text="Node.js enables seamless development across different platforms, ensuring your web application works consistently and flawlessly on desktops, mobile devices, and IoT devices."
               />
@@ -84,7 +90,7 @@ const NodeJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={MdElectricBolt}
                 heading="Extensive package ecosystem"
                 text="Tap into the vast ecosystem of Node.js packages and libraries, empowering you to build and integrate powerful functionalities into your web applications rapidly."
               />
@@ -97,7 +103,7 @@ const NodeJsTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={BsRocketTakeoffFill}
                 heading="Powerhouse for Microservices"
                 text="Our Node.js experts employ its lightweight nature to craft scalable and easily maintainable microservices architectures."
               />

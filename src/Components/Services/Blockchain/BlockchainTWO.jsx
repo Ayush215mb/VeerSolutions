@@ -2,6 +2,12 @@ import React from "react";
 import ReactBenifitTemplate from "../React/ReactBenifitTemplate";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../Variants";
+import { PiCubeTransparentDuotone } from "react-icons/pi";
+import { MdOutlineSecurity } from "react-icons/md";
+import { GoPasskeyFill, GoSortDesc } from "react-icons/go";
+import { TbExchangeOff } from "react-icons/tb";
+import { IoIosSpeedometer } from "react-icons/io";
+import { SiDynatrace } from "react-icons/si";
 const BlockchainTWO = () => {
   return (
     <div className="py-12 border-t md:m-28 border-gray-800 md:py-16 ">
@@ -30,7 +36,7 @@ const BlockchainTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={PiCubeTransparentDuotone}
                 heading="Transparency"
                 text="All transactions are recorded on a public ledger, ensuring transparency and making it easy to verify the authenticity of data."
               />
@@ -43,7 +49,7 @@ const BlockchainTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={MdOutlineSecurity}
                 heading="Security"
                 text="Blockchain uses cryptographic techniques to secure data, making it highly resistant to hacking and fraud."
               />
@@ -56,7 +62,7 @@ const BlockchainTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={GoSortDesc}
                 heading="Decentralization"
                 text="Transactions are processed by a distributed network of nodes, reducing the risk of centralized control and single points of failure."
               />
@@ -70,7 +76,7 @@ const BlockchainTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={TbExchangeOff}
                 heading="Immutability"
                 text="Once data is recorded on the blockchain, it cannot be altered or deleted, ensuring data integrity and trustworthiness."
               />
@@ -83,7 +89,7 @@ const BlockchainTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={IoIosSpeedometer}
                 heading="Efficiency"
                 text="Automated processes and smart contracts reduce the need for intermediaries, speeding up transactions and reducing costs."
               />
@@ -96,7 +102,7 @@ const BlockchainTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={SiDynatrace}
                 heading="Traceability"
                 text="Blockchain provides a clear and unalterable audit trail, making it easy to trace the history and origin of assets and transactions."
               />

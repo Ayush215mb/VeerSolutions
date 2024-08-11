@@ -3,6 +3,13 @@ import ReactBenifitTemplate from "../React/ReactBenifitTemplate";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../Variants";
+import { PiHandCoinsBold } from "react-icons/pi";
+import { TbSocial } from "react-icons/tb";
+import { IoIosSpeedometer } from "react-icons/io";
+import { MdElectricBolt } from "react-icons/md";
+import { TiBeaker } from "react-icons/ti";
+import { HiMiniBeaker } from "react-icons/hi2";
+import { AiFillFund } from "react-icons/ai";
 
 const ReactNativeTWO = () => {
   return (
@@ -33,7 +40,7 @@ const ReactNativeTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={PiHandCoinsBold}
                 heading="Cost-Effectiveness"
                 text="React Native allows for code reusability, enabling faster development and reduced costs."
               />
@@ -45,7 +52,7 @@ const ReactNativeTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={TbSocial}
                 heading="Cross-Platform Compatibility"
                 text="With React Native, you can build apps that work seamlessly on both iOS and Android devices, reaching a wider audience."
               />
@@ -57,7 +64,7 @@ const ReactNativeTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={IoIosSpeedometer}
                 heading="Native-Like Performance"
                 text="React Native combines the efficiency of native app development with the flexibility of JavaScript, providing fast and smooth user experiences."
               />
@@ -71,7 +78,7 @@ const ReactNativeTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={MdElectricBolt}
                 heading="Faster Time to Market"
                 text="Thanks to its modular approach and pre-built components, React Native accelerates the development process, allowing you to launch your app faster."
               />
@@ -84,7 +91,7 @@ const ReactNativeTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={HiMiniBeaker}
                 heading="Community and Ecosystem"
                 text="React Native has a vibrant community and a vast ecosystem of libraries and tools, ensuring continuous support and innovation."
               />
@@ -97,7 +104,7 @@ const ReactNativeTWO = () => {
               viewport={{ once: true, amount: 0.7 }}
             >
               <ReactBenifitTemplate
-                imgsrc="https://i.imgur.com/EVJxXwR.jpeg"
+                icon={AiFillFund}
                 heading="Scalability"
                 text="React Native apps are highly scalable, accommodating your business's growth and your users' evolving needs."
               />

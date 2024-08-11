@@ -1,11 +1,23 @@
 import React from "react";
 import { IoIosSpeedometer } from "react-icons/io";
+import { AiFillFund } from "react-icons/ai";
 
-const ReactBenifitTemplate = ({ imgsrc, heading, text }) => {
+const ReactBenifitTemplate = ({
+  imgsrc,
+  heading,
+  text,
+  icon: IconComponent,
+}) => {
   return (
     <div className="max-w-sm min-w-sm p-5 flex flex-col items-center justify-center gap-10 mt-5 rounded-md hover:bg-gray-800 ">
       <div className="flex ">
-        <img src={imgsrc} alt="img1" className="max-w-16 " />
+        {/* <img src={imgsrc} className="max-w-16 " /> */}
+
+        {IconComponent ? (
+          <IconComponent className="max-w-40 text-4xl text-blue-700" />
+        ) : (
+          <img src={imgsrc} className="max-w-16" alt={heading || "Icon"} />
+        )}
       </div>
 
       <div className="flex flex-col gap-5 items-center ">
