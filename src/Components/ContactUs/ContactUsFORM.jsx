@@ -36,7 +36,7 @@ function ContactForm() {
     Here is a brief of my project: ${brief}`;
     const mailtoLink = `mailto:veer.149610@gmail.com?subject=${encodeURIComponent(
       subject
-    )}&body=${encodeURIComponent(body)}&cc=ayush215mb@gmail.com`;
+    )}&body=${encodeURIComponent(body)}`;
 
     window.location.href = mailtoLink;
   };
