@@ -34,13 +34,13 @@ function ContactForm() {
     const subject = `Hello there, I am ${name}`;
     const body = `I am applying for ${option} with a budget of $${budget}.
     Here is a brief of my project: ${brief}`;
-    const mailtoLink = `mailto:veer.149610@gmail.com,sidharth197502@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:sidharth197502@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
 
     window.location.href = mailtoLink;
   };
-
+  // veer.149610@gmail.com,
   return (
     <motion.div
       variants={fadeIn("up", 0.3)}
