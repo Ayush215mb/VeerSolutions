@@ -3,7 +3,12 @@ const Footer = () => {
   return (
     <div>
       <div className="text-xl text-wrap text-center gap-5 text-red-600 font-medium my-10">
-        <p>This website is developed by Ayush Yadav</p>
+        <p>
+          This website is developed by Ayush Yadav
+          <br />
+          THIS IS NOT A REAL AGENCY WEBSITE <br />
+          this is just one of my projects
+        </p>
         <a
           href="https://ayush215mb.vercel.app/"
           target="_blank"
@@ -34,8 +39,8 @@ const Footer = () => {
         <div className="my-5 flex flex-col justify-center items-start md:px-10">
           <h4 className="text-md font-semibold md:text-3xl">Contact</h4>
 
-          <p className="text-sm my-1 md:text-xl">Akshay Yadav</p>
-          <p className="text-sm md:text-xl">Founder</p>
+          <p className="text-sm my-1 md:text-xl">Ayush Yadav</p>
+          <p className="text-sm md:text-xl">Developer</p>
           <div className="flex gap-3  my-2">
             {/* <a href="mailto:sidharth197502@gmail.com?subject=Hello there,&cc=ayush215mb@gmail.com"> */}
             <a href="mailto:sidharth197502@gmail.com?subject=Hello there,">
