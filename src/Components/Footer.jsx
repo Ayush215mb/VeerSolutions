@@ -12,7 +12,7 @@ const Footer = () => {
         <a
           href="https://ayush215mb.vercel.app/"
           target="_blank"
-          className="hover:text-white"
+          className="hover:text-gray-400 text-white "
         >
           <p>
             Click to get connected to the developer to make awesome websites
