@@ -27,8 +27,8 @@ const NextJsONE = () => {
         </h1>
         <p className="md:text-2xl text-sm font-medium text-wrap">
           Elevate your web solutions with Veer Solutions, the premier Next.js
-          development agency based in Sofia, Bulgaria. Our proficient team
-          designs superior web applications that magnify your business presence.
+          development agency. Our proficient team designs superior web
+          applications that magnify your business presence.
         </p>
       </motion.div>
     </div>

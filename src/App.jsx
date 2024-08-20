@@ -14,6 +14,8 @@ import SideNavBar from "./Components/SideNavBar";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 const App = () => {
   return (
     <Router>
@@ -38,6 +40,9 @@ const App = () => {
         <Route path="/Careers" element={<Careers />} />
         <Route path="/Contact-Us" element={<ContactUs />} />
       </Routes>
+
+      <Analytics />
+      <SpeedInsights />
     </Router>
   );
 };

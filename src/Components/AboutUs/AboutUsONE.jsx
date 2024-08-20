@@ -36,8 +36,8 @@ const AboutUsONE = () => {
             looking for.
             <br></br>
             <br></br>
-            We won’t just take orders and execute to a T. Instead, we’ll tell
-            you when something doesn’t make sense or it can be done better.
+            We won’t just take orders and execute it. Instead, we’ll tell you
+            when something doesn’t make sense or it can be done better.
             <br></br>
             <br></br>
             It’s possible to avoid all the problems of traditional development

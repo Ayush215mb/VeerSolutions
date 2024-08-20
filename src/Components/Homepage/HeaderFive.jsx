@@ -17,7 +17,7 @@ const HeaderFive = () => {
           Partner with a bolder software agency
         </h1>
         <p className="lg:text-2xl md:text-lg text-sm text-wrap max-w-xl tex">
-          Looking for top app developers in India?
+          Looking for top app developers?
           <br></br>
           We have partnered with ambitious companies and entrepreneurs.
         </p>

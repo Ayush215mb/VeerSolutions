@@ -27,9 +27,8 @@ const ReactNativeONE = () => {
         </h1>
         <p className="md:text-2xl text-md font-medium text-wrap">
           Embark on your journey towards app excellence with Veer Solutions, the
-          leading React Native software agency based in India. Our expert team
-          crafts state-of-the-art mobile solutions that amplify your business
-          reach.
+          leading React Native software agency. Our expert team crafts
+          state-of-the-art mobile solutions that amplify your business reach.
         </p>
       </div>
     </motion.div>

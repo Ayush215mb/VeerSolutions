@@ -51,7 +51,7 @@ const CareerONE = () => {
         <h3 className="text-md md:text-3xl mt-3 mx-7 md:mt-5">
           Mail Us your resume and we will get back to you
         </h3>
-        <a href="mailto:veer.149610@gmail.com?subject=Hello there, I am {name}&body=I am applying for {*****} position as a Part-time/ Full-time/Internship and I have attached my resume/portfolio in this mail&cc=sidharth197502@gmail.com">
+        <a href="mailto:sidharth197502@gmail.com?subject=Hello there, I am {name}&body=I am applying for {*****} position as a Part-time/ Full-time/Internship and I have attached my resume/portfolio in this mail ">
           <motion.button
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -68,3 +68,5 @@ const CareerONE = () => {
 };
 
 export default CareerONE;
+
+// veer.149610@gmail.com,
