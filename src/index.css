@@ -11,3 +11,7 @@ body {
   background-color: rgb(3 7 18 / var(--tw-bg-opacity));
   color: white;
 }
+
+.nthng {
+  background-color: white;
+}
