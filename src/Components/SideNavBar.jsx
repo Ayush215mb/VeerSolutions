@@ -25,7 +25,7 @@ const SideNavBar = () => {
       <div className="md:hidden m-5 sm:ml-20">
         {/* X icon for navigating to homepage at the top right */}
         <button onClick={goToHomePage} className="absolute top-8 right-5 cursor-pointer bg-transparent bg-black">
-  <FontAwesomeIcon icon={faTimes} className="text-white text-2xl z-50" />
+  <FontAwesomeIcon icon={faTimes} className="text-gray-400 text-2xl z-50" />
 </button>
 
 
