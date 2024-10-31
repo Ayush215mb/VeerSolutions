@@ -1,31 +1,36 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronUp, faTimes } from "@fortawesome/free-solid-svg-icons"; // Import faTimes for the close icon
 import { useState } from "react";
 import Navbar from "./Navbar";
 
 const SideNavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate(); // Use the useNavigate hook
 
-  const ToggleMenu = () => {
+  const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const goToHomePage = () => {
+    navigate("/"); // Navigate to the homepage
+    setIsOpen(false); // Close the sidebar after navigating
+  };
+
   return (
     <div>
       <header>
         <Navbar />
       </header>
-      <div className="md:hidden m-5 sm:ml-20  ">
-        <div
-          className="relative inline-block"
-          //   onMouseEnter={handleMouseEnter}
-          //   onMouseLeave={handleMouseLeave}
-          onClick={ToggleMenu}
-        >
-          <Link
-            // to="/services/React-development"
-            className="block px-4 py-2  hover:bg-gray-700 text-white"
-          >
+      <div className="md:hidden m-5 sm:ml-20">
+        {/* X icon for navigating to homepage at the top right */}
+        <button onClick={goToHomePage} className="absolute top-8 right-5 cursor-pointer bg-transparent bg-black">
+  <FontAwesomeIcon icon={faTimes} className="text-gray-400 text-2xl z-50" />
+</button>
+
+
+        <div className="relative inline-block">
+          <Link className="block px-4 py-2 hover:bg-gray-700 text-white" onClick={toggleMenu}>
             Services
             <FontAwesomeIcon
               icon={isOpen ? faChevronUp : faChevronDown}
@@ -76,28 +81,27 @@ const SideNavBar = () => {
 
         <Link
           to="/Portfolio"
-          className="block px-4 py-2  hover:bg-gray-700 text-white"
-          //
+          className="block px-4 py-2 hover:bg-gray-700 text-white"
         >
           Portfolio
         </Link>
         <Link
           to="/blog"
-          className="block px-4 py-2  hover:bg-gray-700 text-white"
+          className="block px-4 py-2 hover:bg-gray-700 text-white"
         >
-          blog
+          Blog
         </Link>
         <Link
           to="/About-Us"
-          className="block px-4 py-2  hover:bg-gray-700 text-white"
+          className="block px-4 py-2 hover:bg-gray-700 text-white"
         >
-          About us
+          About Us
         </Link>
         <Link
           to="/Careers"
-          className="block px-4 py-2  hover:bg-gray-700 text-white"
+          className="block px-4 py-2 hover:bg-gray-700 text-white"
         >
-          careers
+          Careers
         </Link>
       </div>
     </div>
