@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
@@ -175,9 +175,9 @@ const Navbar = () => {
         </motion.button>
         <div className="font-3xl grid md:hidden">
           <button className="text-gray-400 hover:text-white focus:outline-none">
-            <Link to="/SideNavbar">
-              <FaBars />
-            </Link>
+          <Link to="/SideNavbar" className={isOpen ? 'hidden' : ''}>
+  <FaBars />
+</Link>
           </button>
         </div>
       </div>
