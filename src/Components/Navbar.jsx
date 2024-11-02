@@ -10,6 +10,13 @@ import { fadeIn } from "../Variants";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSideNav, setIsSideNav] = useState(false);
+
+  const openSideNav = () => {
+    console.log(isSideNav);
+    setIsSideNav((prev) => !prev);
+    console.log(isSideNav);
+  };
 
   const handleMouseEnter = () => {
     setIsOpen(true);
@@ -174,10 +181,16 @@ const Navbar = () => {
           <Link to="/Contact-Us"> Let's talk</Link>
         </motion.button>
         <div className="font-3xl grid md:hidden">
-          <button className="text-gray-400 hover:text-white focus:outline-none">
-          <Link to="/SideNavbar" className={isOpen ? 'hidden' : ''}>
-  <FaBars />
-</Link>
+          <button
+            className="text-gray-400 hover:text-white focus:outline-none"
+            onClick={openSideNav}
+          >
+            <Link
+              to="/SideNavbar"
+              className={(isOpen ? "hidden" : "", isSideNav ? "hidden" : "")}
+            >
+              <FaBars />
+            </Link>
           </button>
         </div>
       </div>

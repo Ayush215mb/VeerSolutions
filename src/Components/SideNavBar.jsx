@@ -1,6 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp, faTimes } from "@fortawesome/free-solid-svg-icons"; // Import faTimes for the close icon
+import {
+  faChevronDown,
+  faChevronUp,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons"; // Import faTimes for the close icon
 import { useState } from "react";
 import Navbar from "./Navbar";
 
@@ -24,13 +28,21 @@ const SideNavBar = () => {
       </header>
       <div className="md:hidden m-5 sm:ml-20">
         {/* X icon for navigating to homepage at the top right */}
-        <button onClick={goToHomePage} className="absolute top-8 right-5 cursor-pointer bg-transparent bg-black">
-  <FontAwesomeIcon icon={faTimes} className="text-gray-400 text-2xl z-50" />
-</button>
-
+        <button
+          onClick={goToHomePage}
+          className="absolute top-8 right-5 cursor-pointer bg-transparent bg-black"
+        >
+          <FontAwesomeIcon
+            icon={faTimes}
+            className="text-gray-400 text-2xl z-50"
+          />
+        </button>
 
         <div className="relative inline-block">
-          <Link className="block px-4 py-2 hover:bg-gray-700 text-white" onClick={toggleMenu}>
+          <Link
+            className="block px-4 py-2 hover:bg-gray-700 text-white"
+            onClick={toggleMenu}
+          >
             Services
             <FontAwesomeIcon
               icon={isOpen ? faChevronUp : faChevronDown}
